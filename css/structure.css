@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------
+Structure - Theme structure using _s classes and Bootstrap CSS
+--------------------------------------------------------------*/
+#page {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#page:before, #page:after {
+  content: " ";
+  display: table;
+}
+#page:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  #page {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #page {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  #page {
+    width: 1170px;
+  }
+}
+
+#masthead,
+#content,
+#colophon {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#masthead:before, #masthead:after,
+#content:before,
+#content:after,
+#colophon:before,
+#colophon:after {
+  content: " ";
+  display: table;
+}
+#masthead:after,
+#content:after,
+#colophon:after {
+  clear: both;
+}
+
+.site-info,
+.site-branding,
+#site-navigation {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .site-info,
+  .site-branding,
+  #site-navigation {
+    float: left;
+    width: 100%;
+  }
+}
+
+.site-branding {
+  float: none;
+}
+
+#primary {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #primary {
+    float: left;
+    width: 66.66667%;
+  }
+}
+
+#secondary {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #secondary {
+    float: left;
+    width: 33.33333%;
+  }
+}
+
+/*# sourceMappingURL=structure.css.map */

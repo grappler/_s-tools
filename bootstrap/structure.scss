@@ -1,0 +1,48 @@
+///*--------------------------------------------------------------
+// Bootstrap
+//--------------------------------------------------------------*/
+
+// Core variables and mixins
+@import "sass/variables";
+@import "sass/mixins";
+
+/*--------------------------------------------------------------
+Structure - Theme structure using _s classes and Bootstrap CSS
+--------------------------------------------------------------*/
+
+#page {
+	@include container-fixed();
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+}
+
+#masthead,
+#content,
+#colophon {
+	@include make-row();
+}
+
+.site-info,
+.site-branding,
+#site-navigation {
+	@include make-md-column(12);
+}
+
+.site-branding {
+	float: none;
+}
+
+#primary {
+	@include make-md-column(8);
+}
+
+#secondary {
+	@include make-md-column(4);
+}

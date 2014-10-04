@@ -1,0 +1,10 @@
+default:
+  - 'watch'
+
+css:
+  - 'sass'
+  - 'cssmin'
+
+js:
+  - 'concat'
+  - 'uglify'
